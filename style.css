@@ -441,8 +441,8 @@ main {
 /* ============ PROJECTS ============ */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .project-card {
@@ -533,7 +533,7 @@ main {
 
 /* ============ CONTACT ============ */
 .contact {
-  max-width: 640px;
+  max-width: 1050px;
   padding: 18px 18px 16px;
 }
 
@@ -556,10 +556,13 @@ main {
 }
 
 .contact textarea {
-  border-radius: 18px;
+  border-radius: 20px;
+  grid-column: 1 / -1;
   resize: vertical;
   min-height: 120px;
+  max-height: 300px;
 }
+
 
 .contact input::placeholder,
 .contact textarea::placeholder {
